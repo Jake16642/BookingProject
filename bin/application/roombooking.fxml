@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BookingPage2">
+   <children>
+      <Text layoutX="254.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book A Room Page" />
+      <Button fx:id="NextButton" layoutX="489.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleRoomButton" text="Next" />
+      <ChoiceBox layoutX="225.0" layoutY="123.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="225.0" layoutY="188.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="225.0" layoutY="258.0" prefWidth="150.0" />
+      <Text layoutX="128.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vip" />
+      <Text layoutX="117.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal" />
+      <Text layoutX="109.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Affordable" />
+   </children>
+</AnchorPane>

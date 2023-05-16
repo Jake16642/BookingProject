@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BookingPage3">
+   <children>
+      <Text layoutX="277.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guest Detail" />
+      <TextField fx:id="prfix" layoutX="32.0" layoutY="80.0" prefHeight="8.0" prefWidth="57.0" promptText="Prfix" />
+      <TextField fx:id="fname" layoutX="96.0" layoutY="80.0" promptText="First name" />
+      <TextField fx:id="mname" layoutX="257.0" layoutY="80.0" promptText="Middle initial" />
+      <TextField fx:id="lname" layoutX="30.0" layoutY="118.0" promptText="Last name" />
+      <TextField fx:id="phone" layoutX="197.0" layoutY="118.0" prefHeight="25.0" prefWidth="97.0" promptText="Phone" />
+      <TextField fx:id="email" layoutX="309.0" layoutY="118.0" promptText="Email Address" />
+      <Text layoutX="28.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact info" />
+      <Text layoutX="32.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <TextField fx:id="country" layoutX="28.0" layoutY="188.0" prefHeight="25.0" prefWidth="80.0" promptText="Country" />
+      <TextField fx:id="adress1" layoutX="119.0" layoutY="188.0" prefHeight="25.0" prefWidth="103.0" promptText="Address 1" />
+      <TextField fx:id="address2" layoutX="234.0" layoutY="188.0" prefHeight="25.0" prefWidth="121.0" promptText="Address 2" />
+      <TextField fx:id="city" layoutX="366.0" layoutY="188.0" prefHeight="25.0" prefWidth="65.0" promptText="City" />
+      <TextField fx:id="zip" layoutX="445.0" layoutY="188.0" prefHeight="25.0" prefWidth="111.0" promptText="Zip code" />
+      <TextArea fx:id="detail" layoutX="30.0" layoutY="237.0" prefHeight="98.0" prefWidth="196.0" promptText="Additional Details" />
+      <Button fx:id="InfoButton" layoutX="507.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleInfoButton" text="Next" />
+      <Text fx:id="line" layoutX="355.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
