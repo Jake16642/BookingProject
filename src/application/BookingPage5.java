@@ -34,7 +34,7 @@ public class BookingPage5 extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
 		Parent root = FXMLLoader.load(getClass().getResource("thankpage.fxml"));
-		primaryStage.setTitle("Hello World");
+		primaryStage.setTitle("JATISOFT");
 		primaryStage.setScene(new Scene(root, 650, 650));
 		primaryStage.show();
 		

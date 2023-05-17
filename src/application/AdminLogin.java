@@ -31,25 +31,37 @@ public class AdminLogin extends Application {
 	private PasswordField pass;
 	@FXML
 	private Text line;
+	@FXML
+	private Button BackButton;
 
+	@FXML
+	private void handleBackButton(ActionEvent event) {
+	    try {
+	        Parent root1 = FXMLLoader.load(getClass().getResource("login.fxml"));
+	        Scene scene = new Scene(root1);
+	        Stage stage = new Stage();
+	        stage.setScene(scene);
+	        stage.show();
+	        
+	        Stage primaryStage = (Stage) BackButton.getScene().getWindow();
+            primaryStage.close();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	}
 
 	@FXML
 	public void start(Stage primaryStage) throws Exception {
 		
 		Parent root = FXMLLoader.load(getClass().getResource("adminlogin.fxml"));
-		primaryStage.setTitle("Hello World");
+		primaryStage.setTitle("JATISOFT");
 		primaryStage.setScene(new Scene(root, 500, 500));
 		primaryStage.show();
 		
-		/*SignInButton = (Button) root.lookup("#SignInButton");
-		SignInButton.setOnAction(event -> {
-            try {
-				handleSignInButton(event);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-        });*/
+		BackButton = (Button) root.lookup("#BackButton");
+        BackButton.setOnAction(event -> {
+        	handleBackButton(event);
+        });
 	}
 	
 	@FXML

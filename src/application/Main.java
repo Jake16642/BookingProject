@@ -9,9 +9,9 @@ public class Main {
     	// Create instances of the classes required for the booking system
     	List<Room> rooms = new ArrayList<>();  // Initialize the list with actual rooms
     	BookingSystem bookingSystem = new BookingSystem(rooms);
-        Room room1 = new Room("101", "Single", 100.0, "available" );
-        Room room2 = new Room("102", "Double", 150.0, "available");
-        Room room3 = new Room("201", "Suite", 200.0, "available");
+        Room room1 = new Room(101, "Single", 100, 1);
+        Room room2 = new Room(102, "Double", 150, 1);
+        Room room3 = new Room(201, "Suite", 200, 1);
         Guest guest1 = new Guest("Mr.", "John", "D.", "Doe", "1234567890", "john.doe@example.com");
         Guest guest2 = new Guest("Ms.", "Jane", "E.", "Smith", "9876543210", "jane.smith@example.com");
         rooms.add(room1);

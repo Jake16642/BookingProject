@@ -4,30 +4,30 @@ import java.time.LocalDate;
 
 
 public class Room {
-	private String roomNumber;
+	private int roomNumber;
 	private String roomType;
-	private double price;
-	private String availabilityStatus;
+	private int price;
+	private int availabilityStatus;
 
-	public Room(String roomNumber, String roomType, double price, String availabilityStatus) {
+	public Room(int roomNumber, String roomType, int price, int availabilityStatus) {
 		this.roomNumber = roomNumber;
 		this.roomType = roomType;
 		this.price = price;
 		this.availabilityStatus = availabilityStatus;
 	}
 
-	public Room(String roomNumber, String roomType, double price) {
+	public Room(int roomNumber, String roomType, int price) {
 		this.roomNumber = roomNumber;
 		this.roomType = roomType;
 		this.price = price;
 	}
 
 	public boolean isAvailable() {
-		return availabilityStatus.equals("available");
+		return availabilityStatus == 1;
 	}
 	
 	public boolean isAvailable(LocalDate checkInDate,LocalDate checkOutDate) {
-		return availabilityStatus.equals("available");
+		return availabilityStatus == 1;
 	}
 
 	public String getDetails() {
@@ -35,11 +35,11 @@ public class Room {
 				+ "\nAvailability: " + availabilityStatus;
 	}
 
-	public void setRoomNumber(String roomNumber) {
+	public void setRoomNumber(int roomNumber) {
 		this.roomNumber = roomNumber;
 	}
 
-	public String getRoomNumber() {
+	public int getRoomNumber() {
 		return this.roomNumber;
 	}
 
@@ -51,19 +51,19 @@ public class Room {
 		return this.roomType;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 
-	public double getPrice() {
+	public int getPrice() {
 		return this.price;
 	}
 
-	public void setAvailabilityStatus(String availabilityStatus) {
+	public void setAvailabilityStatus(int availabilityStatus) {
 		this.availabilityStatus = availabilityStatus;
 	}
 
-	public String getAvailabilityStatus() {
+	public int getAvailabilityStatus() {
 		return this.availabilityStatus;
 	}
 	

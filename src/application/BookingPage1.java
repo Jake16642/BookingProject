@@ -37,7 +37,7 @@ import java.time.LocalDate;
 public class BookingPage1 extends Application {
 	
 	private static Connection connection;
-	private static final String SQL_INSERT = "INSERT INTO registration(aldutNum, childNum, checkindate, checkoutdate) VALUES(?,?,?,?)";
+	private static final String SQL_INSERT = "INSERT INTO datebooking(aldutNum, childNum, checkindate, checkoutdate) VALUES(?,?,?,?)";
     private static int adultNum;
     private static int childNum;
     private static LocalDate checkIn;
@@ -167,7 +167,7 @@ public class BookingPage1 extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root2 = FXMLLoader.load(getClass().getResource("datebooking.fxml"));
-		primaryStage.setTitle("Hello");
+		primaryStage.setTitle("JATISOFT");
 		primaryStage.setScene(new Scene(root2, 500, 500));
 		primaryStage.show();
 		

@@ -33,6 +33,24 @@ public class GuestLogin extends Application {
 	private PasswordField pass;
 	@FXML
 	private Text line;
+	@FXML
+	private Button BackButton;
+
+	@FXML
+	private void handleBackButton(ActionEvent event) {
+	    try {
+	        Parent root1 = FXMLLoader.load(getClass().getResource("login.fxml"));
+	        Scene scene = new Scene(root1);
+	        Stage stage = new Stage();
+	        stage.setScene(scene);
+	        stage.show();
+	        
+	        Stage primaryStage = (Stage) BackButton.getScene().getWindow();
+            primaryStage.close();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	}
 
 	@FXML
 	private void handleSignInButton(ActionEvent event) throws Exception {
@@ -74,8 +92,8 @@ public class GuestLogin extends Application {
 
 	    // display result
 	    while (rs.next()) {
-	      //System.out.println(rs.getString(1) + "|" + rs.getString(2) + "|" + rs.getString(3));
-	      return true;
+	    	System.out.println(rs.getString(1) + "|" + rs.getString(2) + "|" + rs.getString(3));
+	    	return true;
 	    }
 
 	    return false;
@@ -100,13 +118,18 @@ public class GuestLogin extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("guestlogin.fxml"));
-		primaryStage.setTitle("Hello World");
+		primaryStage.setTitle("JATISOFT");
 		primaryStage.setScene(new Scene(root, 550, 500));
 		primaryStage.show();
 		
 		RegisterButton = (Button) root.lookup("#RegisterButton");
 		RegisterButton.setOnAction(event -> {
 			handleRegisterButton(event);
+        });
+		
+		BackButton = (Button) root.lookup("#BackButton");
+        BackButton.setOnAction(event -> {
+        	handleBackButton(event);
         });
 	}
 

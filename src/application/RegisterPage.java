@@ -53,7 +53,7 @@ public class RegisterPage extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("registerpage.fxml"));
-		primaryStage.setTitle("Hello World");
+		primaryStage.setTitle("JATISOFT");
 		primaryStage.setScene(new Scene(root, 600, 500));
 		primaryStage.show();
 		

@@ -35,7 +35,7 @@ public class AdminPage extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("adminpage.fxml"));
-		primaryStage.setTitle("Hello World");
+		primaryStage.setTitle("JATISOFT");
 		primaryStage.setScene(new Scene(root, 600, 400));
 		primaryStage.show();
 		

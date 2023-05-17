@@ -10,20 +10,21 @@ public class Guest {
 	private Address address;
 
 	public Guest(String prefix, String firstName, String middleInitial, String lastName, String phoneNumber,
-			String emailAddress) {
+			String emailAddress, Address address) {
 		this.prefix = prefix;
 		this.firstName = firstName;
 		this.middleInitial = middleInitial;
 		this.lastName = lastName;
 		this.phoneNumber = phoneNumber;
 		this.emailAddress = emailAddress;
+		this.address = address;
 	}
 	
-	public Guest(String prefix, String firstName, String lastName, String phoneNumber,
+	public Guest(String prefix, String firstName, String middleInitial, String lastName, String phoneNumber,
 			String emailAddress) {
 		this.prefix = prefix;
 		this.firstName = firstName;
-		this.middleInitial = "";
+		this.middleInitial = middleInitial;
 		this.lastName = lastName;
 		this.phoneNumber = phoneNumber;
 		this.emailAddress = emailAddress;

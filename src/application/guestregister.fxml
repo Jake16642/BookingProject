@@ -20,5 +20,6 @@
       <Button fx:id="SignUpButton" layoutX="253.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleSignUpButton" text="Sign up" />
       <PasswordField fx:id="pass" layoutX="207.0" layoutY="179.0" promptText="Password" />
       <Text fx:id="line" layoutX="-13.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="589.0" />
+      <Button fx:id="BackButton" layoutX="406.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="20.0" prefWidth="59.0" text="back" />
    </children>
 </AnchorPane>

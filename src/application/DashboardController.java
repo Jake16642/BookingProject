@@ -26,7 +26,7 @@ public class DashboardController extends Application {
 	        stage.setScene(scene);
 	        stage.show();
 	        
-	        Stage primaryStage = (Stage) bookingButton.getScene().getWindow();
+	        Stage primaryStage = (Stage) BackButton.getScene().getWindow();
             primaryStage.close();
 	    } catch (IOException e) {
 	        e.printStackTrace();

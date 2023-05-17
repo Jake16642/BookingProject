@@ -113,14 +113,6 @@ public class BookingPage3 extends Application{
 	
 	@FXML
 	private void handleInfoButton(ActionEvent event) {
-		String prefix = prfix.getText();
-		String firstName = fname.getText();
-		String middleInitial = mname.getText();
-		String lastName = lname.getText();
-		String phoneNumber = phone.getText();
-		String emailAddress = email.getText();
-		guest = new Guest(prefix, firstName, middleInitial, lastName, phoneNumber, emailAddress);	
-		
 		String country1 = country.getText();
 		String ad1 = adress1.getText();
 		String ad2 = address2.getText();
@@ -128,6 +120,14 @@ public class BookingPage3 extends Application{
 		String zipCode = zip.getText();
 		String additionalDetails = detail.getText();
 		address = new Address(country1, ad1, ad2, cty, zipCode, additionalDetails);
+		
+		String prefix = prfix.getText();
+		String firstName = fname.getText();
+		String middleInitial = mname.getText();
+		String lastName = lname.getText();
+		String phoneNumber = phone.getText();
+		String emailAddress = email.getText();
+		guest = new Guest(prefix, firstName, middleInitial, lastName, phoneNumber, emailAddress, address);	
 
 		if(prefix.isEmpty() || firstName.isEmpty() || middleInitial.isEmpty() || lastName.isEmpty() || phoneNumber.isEmpty() || emailAddress.isEmpty()
 				|| country1.isEmpty() || ad1.isEmpty() || ad2.isEmpty() || cty.isEmpty() || zipCode.isEmpty() || additionalDetails.isEmpty()) {
@@ -155,7 +155,7 @@ public class BookingPage3 extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
 		Parent root = FXMLLoader.load(getClass().getResource("guestinfo.fxml"));
-		primaryStage.setTitle("Hello World");
+		primaryStage.setTitle("JATISOFT");
 		primaryStage.setScene(new Scene(root, 600, 500));
 		primaryStage.show();
 	}

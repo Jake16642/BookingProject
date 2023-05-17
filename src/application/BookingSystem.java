@@ -61,7 +61,7 @@ public class BookingSystem {
         boolean isBooked = false;
         
         for (Room room : this.availableRooms) {
-        	if (room.getAvailabilityStatus().equals("available")) {
+        	if (room.getAvailabilityStatus() == 1) {
         		 isBooked = false;
         	}
            
